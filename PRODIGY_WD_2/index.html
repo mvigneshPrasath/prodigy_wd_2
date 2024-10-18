@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <div class="stopwatch-header">
+            <i class="fa-solid fa-stopwatch"></i>
+            <h1>Stopwatch</h1>
+        </div>
+        <div class="time-display">
+            <span id="hours">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>:
+            <span id="milliseconds">000</span>
+        </div>
+        <div class="controls">
+            <button id="startBtn"><i class="material-icons">play_arrow</i> Start</button>
+            <button id="pauseBtn" disabled><i class="material-icons">pause</i> Pause</button>
+            <button id="resetBtn" disabled><i class="material-icons">replay</i> Reset</button>
+            <button id="lapBtn" disabled><i class="material-icons">flag</i> Lap</button>
+        </div>
+        <div class="lap-times">
+            <h3>Lap Times</h3>
+            <ul id="lapList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
